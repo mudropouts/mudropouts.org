@@ -1,0 +1,13 @@
+.sass-cache/
+*.css.map
+.vagrant
+__pycache__/
+*.pyc
+
+# ide files
+.idea/
+
+.dropouts
+.env
+*.pem
+out/*.html

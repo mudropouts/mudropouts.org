@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'ConcursoItalianBTNRegular';
+    src: url('concursoitalian-btn.eot');
+    src: url('concursoitalian-btn.eot') format('embedded-opentype'),
+         url('concursoitalian-btn.woff') format('woff'),
+         url('concursoitalian-btn.ttf') format('truetype'),
+         url('concursoitalian-btn.svg#ConcursoItalianBTNRegular') format('svg');
+}
+body{
+	font-family: 'ConcursoItalianBTNRegular';
+	}

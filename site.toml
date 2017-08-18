@@ -1,0 +1,209 @@
+[club]
+name = "MU Dropouts Skydiving Club"
+email = "dropouts@miamioh.edu"
+phone = "888.234.JUMP"
+short_name = "MU Dropouts"
+display_url = "mudropouts.org"
+url = "https://mudropouts.org"
+email_topics = [
+	"First Jump",
+	"Group Packages",
+	"Getting Your License",
+	"Dropouts Media",
+	"Joining the Dropouts",
+	"Tandem Jump",
+	"AFF Jump",
+	"Static-Line Jump",
+]
+
+offers = [
+	"Do your first skydive for less than $160!",
+	"Skydive with the Dropouts Today!",
+]
+
+total_jumps = "5,500"
+
+[club.address]
+street = "4925 North State Route 42"
+city = "Waynesville, OH 45068"
+hours = "9am to sunset, Friday - Sunday"
+
+[[link.social]]
+service = "facebook"
+url = "https://www.facebook.com/mudropouts"
+
+[[link.social]]
+service = "twitter"
+url = "https://twitter.com/mudropouts"
+
+[[link.social]]
+service = "instagram"
+url = "https://instagram.com/mudropouts"
+
+[[link.header]]
+text = "About Us"
+url = "about.html"
+
+[[link.header]]
+text = "First Time Jumpers"
+url = "first-time.html"
+
+[[link.footer]]
+text = "Our Dropzone"
+url = "http://skydivecincinnati.com"
+
+[[link.footer]]
+text = "USPA"
+url = "http://uspa.org"
+
+[[link.footer]]
+text = "The HUB"
+url = "https://muhub.collegiatelink.net/organization/mudropouts"
+
+[site]
+description = "Miami University's Skydiving Club"
+admin_emails = ["dropouts@miamioh.edu"]
+keywords = [
+	"skydiving", "dropouts", "miami university", "ohio skydiving",
+	"ohio", "miami skydiving", "miami university skydiving", "skydiving club",
+	"university skydiving",
+]
+static_root = "/static"
+image_root = "/static/images"
+
+[[pages.index.promos]]
+url = "about-us"
+image = "promo_pic_3.png"
+text = """
+The MU Dropouts have been skydiving with Miami University since 1972! We have a
+proud tradition of helping Miami students take their first plunge toward the
+Earth. If you feel like your classes are too boring, or you just need a break
+from studying, come out with the Dropouts to make your first jump!
+"""
+
+[[pages.index.promos]]
+url = "skydive-types"
+image = "promo_pic_2.png"
+text = """
+There are many options for your first skydive: whether you want to jump right in
+to a license progression program like AFF or Static-Line, or just sit back and
+let a tandem instructor take control, the MU Dropouts will help you fulfill your
+skydiving dreams.
+"""
+
+[[pages.index.promos]]
+url = "people"
+image = "promo_pic_1.png"
+text = """
+Throughout our history, the MU Dropouts have helped thousands of Miami students,
+faculty, & friends live their skydiving dreams. Sign up today to do your first
+jump with the MU Dropouts Skydiving Club!
+"""
+
+[[pages.index.testimonials]]
+name = "Mary F."
+text = """
+It was an amazing experience and I would definitely go again. I was nervous at
+first but once we got on the plane I couldn't wait to be in free fall. The
+Dropouts' discount really helped and it was great to go with friends from Miami.
+"""
+jump_date = "2014-09-27"
+
+[[pages.index.testimonials]]
+name = "Nate M."
+text = """
+lorem ipsum dolor sit amet
+"""
+jump_date = "2014-09-27"
+
+[[pages.index.testimonials]]
+name = "Jacob H."
+text = """
+At first I thought that there would be fear, but as I looked down from the edge
+of the plane and tumbled down into the open sky, I could only feel one strange
+sensation: Peace. Even plummeting toward the Earth, wind whipping my hair and
+clothes, it was one of the only times in my life when I had felt so alive. It
+was an incredible experience, and I can't wait to jump again.
+"""
+jump_date = "2014-09-27"
+
+[[pages.index.testimonials]]
+name = "Loy M."
+text = """
+It was the most exhilarating and fun thing I've ever done in my life!
+"""
+jump_date = "2014-09-27"
+
+[pages.index]
+slider_images = [
+	"slider_pic_1.jpg", "slider_pic_2.jpg", "slider_pic_3.jpg",
+]
+title = ""
+description = "Miami University's skydiving club"
+
+[pages.about]
+slider_images = [
+	"about_slider_01.png", "about_slider_02.png", "about_slider_03.png",
+	"about_slider_04.png",
+]
+inner_slider_images = [
+	"top_scroll_01.png", "top_scroll_02.png", "top_scroll_03.png",
+	"top_scroll_04.png", "top_scroll_05.png", "top_scroll_06.png",
+]
+title = "About Us"
+description = "About the MU Dropouts Skydiving Club"
+
+[pages.first-time]
+slider_images = [
+	"first_jump_01.jpg", "first_jump_02.jpg", "first_jump_03.jpg",
+	"first_jump_04.jpg", "first_jump_05.jpg",
+]
+inner_slider_images = [
+	"top_scroll_01.png", "top_scroll_02.png", "top_scroll_03.png",
+	"top_scroll_04.png", "top_scroll_05.png", "top_scroll_06.png",
+]
+title = "First Time Skydivers"
+description = "Information for first time skydivers"
+
+[[pages.first-time.jump_types]]
+name = "Tandem Jump"
+price = 139
+short_description = "Try skydiving in the easiest, quickest way possible!"
+description = """
+If you want to be able to skydive in the quickest & simplest way you possibly
+can, try a Tandem skydive! You will be strapped to a certified Tandem Skydiving
+Instructor, and you will get to experience all the thrill of skydiving without
+having to take any training classes. If you aren't sure if skydiving is for you,
+a Tandem jump is the easiest way to find out!
+"""
+
+[[pages.first-time.jump_types]]
+name = "Static-Line Jump"
+price = 99
+short_description = "The most cost-efficient way to jump for the first time!"
+description = """
+In the morning, you will complete a first-jump course outlining the safe and
+proper operation of a parachute and how to handle malfunctions. If weather
+allows, in the afternoon you will complete your first skydive! A line will be
+attached to the inside of the plane, with the other end attached to your
+parachute. As soon as you exit the plane your parachute will open on its own due
+to the line. You won't have very much freefall time, but you will spend the next
+5 minutes flying your parachute to the ground solo. A radio will be provided so
+that a certified USPA coach can talk you to the ground safely. This is the ideal
+jump package for someone who is looking to earn their skydiving license.
+"""
+
+[[pages.first-time.jump_types]]
+name = "AFF Jump"
+price = 264
+short_description = "Our most exciting first jump package!"
+description = """
+If you want to experience the freedom of freefall and the thrill of canopy
+flight without the anchor of a tandem instructor, try an Accelerated Freefall
+(AFF) jump. After completing a first-jump course in the morning, you and two
+instructors will exit the plane together from 10,500 feet above the Earth. The
+instructors will hold onto your jumpsuit for the duration of the freefall to
+keep you stable, but you will deploy and pilot your own parachute. You will
+freefall for approximately 45 seconds with your instructors. If you want the
+most thrilling and challenging option available, schedule an AFF jump today!
+"""

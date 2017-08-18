@@ -1,0 +1,148 @@
+{% extends 'base_with_inner_slider.html' %}
+
+{% block content %}
+	<section class="inner_area fix">
+		<div class="inner_area_left">
+			<div class="title">THE MU DROPOUTS...</div>
+			<div class="content">
+				<p>
+					Since 1972, we have helped many thousands of Miami Students,
+					friends & faculty perform their first skydives. Since we
+					have started recording jumps, Miami students have performed
+					{{ club.total_jumps }} jumps. Hundreds more have earned their
+					skydiving license from the United States Parachute
+					Association with the Dropouts help. We have partnered with
+					<a href="http://skydivewarrencounty.com">
+						Skydive Warren County
+					</a>, a fixture in the skydiving business since
+					1969, to ensure that our members have the best skydiving
+					experience that we can provide.
+				</p>
+
+				<br/>
+
+				<p>
+					Members of the MU Dropouts Skydiving club are held to the
+					highest standard of safety and respect for the sport of
+					skydiving. Everyone skydiving with us are subject to the
+					Basic Safety Regulations set forth by the United States
+					Parachute Association. Ensuring the safety of our members is
+					paramount, as safe skydiving practices lead to more
+					skydivers, and happy skydivers.
+				</p>
+			</div>
+		</div>
+		<div class="inner_area_right">
+			<div class="title_right">
+				Come skydive with the Dropouts today!
+			</div>
+			<div id="gallery">
+				<div id="pictures">
+					{% for image in page.slider_images %}
+					<a
+						data-lightbox="gallery"
+						href="{{ site.image_root }}/{{ image.url }}">
+						<img
+							class="shuffle_image"
+							src="{{ site.image_root }}/{{ image.url }}"
+							style="z-index: {{ image.z_index }}; -moz-transform: rotate({{ image.rotate }}); -webkit-transform: rotate({{ image.rotate }}); -o-transform: rotate({{ image.rotate }}); -ms-transform: rotate({{ image.rotate }}); transform: rotate({{ image.rotate }});">
+							</img>
+						</a>
+					{% endfor %}
+				</div>
+				<div class="controller">
+					<div class="prev" id="prev">
+						<a href="#previous">
+							<img alt="previous" src="{{ site.image_root }}/previous.png"/>
+						</a>
+					</div>
+					<div class="next1" id="next">
+						<a href="#">
+							<img alt="Next" src="{{ site.image_root }}/next.png"/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="inner_right_map">
+				<a href="https://www.google.com/maps/place/5869+W+Atlantic+Ave,+Delray+Beach,+FL+33484/@26.455284,-80.1375401,15z/data=!4m2!3m1!1s0x88d9202a0713769d:0xf4ae314dbe44b1bd" target="_blank">
+					View on
+					<br>
+						MAP
+					</br>
+				</a>
+			</div>
+		</div>
+		<div class="clearfix">
+		</div>
+		<div class="inner_area_bottom">
+			<a class="md-trigger blue_button" data-modal="modal-1" href="javascript: void(0)">
+				SKYDIVE WITH THE DROPOUTS!
+			</a>
+		</div>
+	</section>
+	<section class="inner_area2 fix">
+		<div class="inner_area2_inner">
+			<div class="title">
+				STUDENTS • THRILL-SEEKERS • FUN-LOVERS
+			</div>
+			<div class="content">
+				<div class="about_area_left">
+					<ul class="inner_description">
+						<li>Never been skydiving before? The Dropouts can help with:</li>
+						<ul>
+							<li>Tandem Jumps</li>
+							<li>Friendly Staff</li>
+							<li>Rides to the Dropzone</li>
+							<li>Cheaper Jumps</li>
+						</ul>
+					</ul>
+				</div>
+				<div class="about_area_right">
+					<ul ass="inner_description" cl="">
+						<li>Want to get your license? Dropouts can get you:</li>
+						<ul>
+							<li>Accelerated Freefall Program</li>
+							<li>Static-Line Program</li>
+							<li>Packing Classes</li>
+							<li>Free Gear Rental</li>
+						</ul>
+					</ul>
+				</div>
+				<div class="clearfix">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="inner_area3 fix">
+		<div class="inner_area3_inner">
+			<div class="title">
+				THE DROPOUTS CAN'T WAIT TO HELP YOU SKYDIVE!
+			</div>
+		</div>
+	</section>
+	<section class="inner_area4 fix">
+		<div class="inner_area4_inner">
+			<div class="title">
+				NEED MORE INFORMATION? CALL OR SEND US AN EMAIL.
+			</div>
+			<div class="title2">
+				{{ club.phone }}
+			</div>
+			<div class="title2">
+				<a href="mailto:{{ club.email }}">{{ club.email }}</a>
+			</div>
+			<div class="content">
+			<!--<div class="inner_area4_image"><img src="{{ site.static_root }}/images/showroom_pic.png"></div>-->
+				<div class="content_bottom">
+					<span>
+						{{ club.address.street }}, {{ club.address.city }}
+					</span>
+					<span style="margin-left: 50px;">
+						{{ club.address.hours }}
+					</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

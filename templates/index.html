@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <section class="banner_area fix">
+
+        <div class="banner fix">
+
+            <div class="banner_slider_area">
+
+                <div class="banner_slider">
+
+                    {% for image in page.slider_images %}
+                        <div class="items">
+							<img src="{{ site.image_root }}/{{ image }}" alt="slider image">
+                        </div>
+                    {% endfor %}
+
+                </div>
+
+                <div class="banner_menu">
+                    <ul>
+                        <li><a href="javascript: void(0)" class="md-trigger" data-modal="modal-1">FIRST TIME JUMPING?</a></li>
+                    </ul>
+                </div>
+
+                <div class="live_chat_area">
+                    <a href="javascript: void(0)" class="md-trigger" data-modal="modal-1">CONTACT US</a>
+                </div>
+
+                <div class="shadow"></div>
+            </div>
+
+    </section>
+
+    <section class="testimonial_area fix">
+
+        <div class="testimonial container">
+
+            <div class="testimonial_carousel">
+
+                {% for testimonial in page.testimonials %}
+                    <div class="testimonial_items">
+                        <p>“{{ testimonial.text }}”</p>
+                        <span>~{{ testimonial.name }}</span>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+
+    <section class="promo_box_area fix">
+
+        <div class="promo_box stracture fix">
+
+            {% for promo in page.promos %}
+				<div class="single_promo_box fix {{ loop.cycle('last-in-row', '') }}">
+
+					<div class="single_promo_box_inner fix">
+						<div class="single_promo_box_inner_left fix">
+							<img src="{{ site.image_root}}/{{ promo.image }}" alt="promo image">
+						</div>
+
+						<div class="single_promo_box_inner_right fix">
+							<p>{{ promo.text }}</p>
+						</div>
+
+					</div>
+
+                <a href="{{ promo.url }}">MORE</a>
+
+                </div>
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+    <section class="promo2_box_area fix" style="border-bottom: 0px;">
+        <div class="promo2_box_area_inner">
+            <div class="title">Skydive With the MU Dropouts!</div>
+			<div class="title">{{ club.total_jumps }} Jumps and Counting!</div>
+
+			<div class="title2">The MU Dropouts have been skydiving at (and
+				over) Miami University for over 40 years! Let us help you
+				fulfill your dreams of freefalling towards the Earth.</div>
+
+            <div class="title3">Being a member of the MU Dropouts makes skydiving...</div>
+
+            <ul class="promo2_list">
+
+                <li>More affordable</li>
+                <li>Easier</li>
+                <li>More fun</li>
+                <li>Safer</li>
+                <li>BETTER!</li>
+
+            </ul>
+
+            <!-- <div><a href="javascript: void(0)" class="md-trigger yellow_button" data-modal="modal-1">REQUEST A FREE ESTIMATE</a></div> -->
+        </div>
+    </section>
+
+{% endblock %}

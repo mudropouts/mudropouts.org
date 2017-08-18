@@ -1,0 +1,18 @@
+$red-color: #C02A39;
+$red-color-dark: darken($red-color, 20%);
+$red-color-light: lighten($red-color, 20%);
+
+$grey-color-dark: #303030;
+$grey-color-light: #8C8C8C;
+
+$social-instagram-color: #3f729b;
+
+$carousel-timer: 250ms;
+
+@import 'style';
+@import 'component';
+@import 'fonts';
+@import 'owl.carousel';
+@import 'responsive';
+@import 'smoothDivScroll';
+@import 'validationEngine.jquery';

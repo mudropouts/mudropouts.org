@@ -1,0 +1,73 @@
+{% extends 'base_with_inner_slider.html' %}
+
+{% block content %}
+	<section class="inner_area fix" style="border-bottom: 0px;">
+		<div class="inner_area_left">
+			<div class="title" style="margin-bottom: 0px;">
+				FIRST TIME JUMPERS...
+			</div>
+		</div>
+		<div class="clearfix">
+		</div>
+	</section>
+	<section class="product_area fix">
+		<div class="product_area_inner">
+			<div class="title2">
+				The {{ club.name }} has been helping Miami
+				students make their first skydive for
+				<strong>
+					over 40 years!
+				</strong>
+				Let us help you take the first step towards
+				excitement, jump with the Dropouts today!
+			</div>
+			<div class="content" style="margin-bottom: 20px;">
+				<ul class="product_description">
+					{% for jump in page.jump_types %}
+						<li>
+							<a href="#{{ jump.name|replace(' ', '-')|lower }}">{{ jump.name }}</a> — {{ jump.short_description }}
+						</li>
+					{% endfor %}
+				</ul>
+				<div class="clearfix">
+				</div>
+			</div>
+			<div class="product_area_bottom">
+				<a class="md-trigger yellow_button" data-modal="modal-1" href="javascript: void(0)">
+					SCHEDULE YOUR FIRST JUMP!
+				</a>
+			</div>
+			<div class="product_area_images">
+				{% for image in page.slider_images %}
+					{% if loop.last %}
+						<div class="product_area_images_left" style="margin-right: 0px;">
+					{% else %}
+						<div class="product_area_images_left">
+					{% endif %}
+					<img src="{{ site.image_root }}/{{ image }}">
+						</img>
+					</div>
+				{% endfor %}
+				<div class="clearfix">
+				</div>
+			</div>
+		</div>
+	</section>
+	{% for jump in page.jump_types %}
+		<section class="promo2_box_area fix">
+			<div class="promo2_box_area_inner">
+				<div class="title" id="{{ jump.name|replace(' ', '-')|lower }}">
+					{{ jump.name }} — ${{ jump.price }}
+				</div>
+				<div class="title2" style="margin-bottom: 40px;">
+					{{ jump.description }}
+				</div>
+				<div>
+					<a class="md-trigger yellow_button" data-modal="modal-1" href="javascript: void(0)">
+						{{ jump.schedule_message }}
+					</a>
+				</div>
+			</div>
+		</section>
+	{% endfor %}
+{% endblock %}
