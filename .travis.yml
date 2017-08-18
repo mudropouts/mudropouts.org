@@ -8,5 +8,7 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: out
+  repo: mudropouts/mudropouts.github.io
+  target_branch: master
   on:
     branch: master
